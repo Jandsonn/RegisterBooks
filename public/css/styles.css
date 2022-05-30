@@ -1,0 +1,88 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #6495ED;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.form,
+.books-container {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5em;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: .3em;
+  color: white;
+}
+
+.form-control input {
+  padding: 0.8em;
+  border-radius: 0.5em;
+  border: none;
+}
+
+.form-control input:focus {
+  outline: none;
+}
+
+
+.btn {
+  float: right;
+  padding: 0.6em;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.3em;
+}
+
+.btn submit:hover,
+.btn:hover {
+  background-color: darkgrey;
+  color: white;
+}
+
+/*BOOKSCSS*/
+.books-container div {
+  border-bottom: 1px solid #ccc;
+  padding: 6px;
+  margin: 6px;
+  color: azure;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.link:hover {
+  background-color: #80a4e8;
+  border-radius: 0.1em;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(186, 217, 232);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 300px;
+  color: white;
+  font-size: 100%;
+}

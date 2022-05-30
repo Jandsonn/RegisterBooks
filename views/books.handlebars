@@ -1,0 +1,11 @@
+<h1>books is here</h1>
+
+<div class="books-container">
+    <a class="link" href="/"> &#10145; Add book</a>
+    {{#each books}}
+    <div>#{{this.id}} - <span class="bold">{{this.title}}</span> - {{this.pageqty}} numbers pages
+
+    </div>
+
+    {{/each}}
+</div>

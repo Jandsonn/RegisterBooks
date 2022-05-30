@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>Register now</h1>
+    <form action="/books/insertbooks" method="POST" class="form">
+        <div class="form-control">
+            <label for="title">Title</label>
+            <input type="text" name="title" placeholder="Informe o título">
+        </div>
+
+        <div class="form-control">
+            <label for="infautor">Author</label>
+            <input type="text" name="infautor" placeholder="Inform the author">
+        </div>
+
+        <div class="form-control">
+            <label for="pageqty">Pages</label>
+            <input type="number" name="pageqty" placeholder="Inform the number of page">
+        </div>
+
+        <input type="submit" value="Register" class="btn">
+
+
+    </form>
+
+    <div class="footer">
+        <footer>
+            Site criado em 30 maio [Jandson "Jandson dos Anjos"] — Copyright © 2022-2022.
+        </footer>
+    </div>
+
+
+    {{!-- //--- -- // script validate with onclick -- // -- // -- // -- // -- // -- // - --}}
+    {{!-- <div class="btn">
+        <input type="submit" id="confirm" onclick="confirmar()" class="registerbtn" value="Cadastrar">
+        <script> function confirmar() { confirm('Você quer cadastrar seu livro?') } </script>
+    </div>
+
+    <script type="text/javascript">
+        function formatarMoeda() {
+            var elemento = document.getElementById('valor');
+            var valor = elemento.value;
+
+            valor = valor + '';
+            valor = parseInt(valor.replace(/[\D]+/g, ''));
+            valor = valor + '';
+            valor = valor.replace(/([0-9]{2})$/g, ",$1");
+
+            if (valor.length > 6) {
+                valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1,$2");
+            }
+
+            elemento.value = valor;
+            if (valor == 'NaN') elemento.value = '';
+        }
+    </script> --}}
+
+    </form>
+
+</body>
+
+</html>
